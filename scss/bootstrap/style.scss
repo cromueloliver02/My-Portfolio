@@ -1,0 +1,147 @@
+// #F16529
+$html-color: #d15b2a;
+$css-color: #4a97d4;
+$js-color: #feda3d;
+$bootstrap-color: #563d7c;
+$php-color: #8993be;
+$sql-color: #006089;
+
+.text-html-color {
+   color: $html-color;
+}
+.text-css-color {
+   color: $css-color;
+}
+.text-js-color {
+   color: $js-color;
+}
+.text-bootstrap-color {
+   color: $bootstrap-color;
+}
+.text-php-color {
+   color: $php-color;
+}
+.text-sql-color {
+   color: $sql-color;
+}
+
+.loader {
+   width: 100%;
+   height: 100%;
+   background: #fff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 6;
+}
+.loader .loader-inner {
+   width: 100%;
+   height: 100%;
+   background: url('../loader.gif')
+               center;
+}
+
+#main-nav {
+   border-bottom: 3px solid #008ed6;
+}
+
+#showcase {
+   // background: url('../../img/showcase1.jpg')
+   //             no-repeat
+   //             center
+   //             center/cover;
+   // height: 100vh;
+   position: relative;
+}
+// #showcase::before {
+//    content: '';
+//    background: rgba(0, 0, 0, 0.8);
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+// }
+.showcase-content {
+   z-index: 5;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+}
+
+#skills {
+   i {
+      font-size: 10rem;
+   }
+}
+
+#subscribe {
+   background: url('../../img/parallax1.jpg')
+               no-repeat
+               center
+               center/cover
+               fixed;
+   // position: relative;
+
+   .dark-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      // position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
+
+#get-in-touch {
+   background: url('../../img/parallax2.jpg')
+               no-repeat
+               center
+               center/cover
+               fixed;
+   // position: relative;
+
+   .dark-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      // position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
+
+@media(max-width: 768px) {
+   .mb-md-resp {
+      margin-bottom: 1rem;
+   }
+
+   #showcase {
+      .name {
+         font-size: 2.9rem;
+      }
+      .title {
+         font-size: 2rem;
+      }
+      .lead {
+         // font-size: 1rem;
+      }
+   }
+
+   #get-in-touch .touch-form {
+      width: 75% !important;
+   }
+}
+
+@media(max-width: 576px) {
+   .mb-sm-resp {
+      margin-bottom: 1rem;
+   }
+
+   #get-in-touch .touch-form {
+      width: 100% !important;
+   }
+}
