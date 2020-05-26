@@ -2,8 +2,9 @@ function load() {
    $('.loader').fadeOut(750);
 }
 
+document.addEventListener('DOMContentLoaded', load());
+
 $(document).ready(function () {
-   document.addEventListener('DOMContentLoaded', load());
    // setTimeout(() => {
    //    load();
    // }, 2000);
