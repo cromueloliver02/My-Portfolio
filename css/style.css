@@ -49,7 +49,12 @@
   font-size: 10rem; }
 
 #subscribe {
-  background: url("../../img/parallax1.jpg") no-repeat center center/cover fixed; }
+  background: url("../img/parallax1.jpg")
+                  no-repeat
+                  center
+                  center/cover
+                  fixed;
+ }
   #subscribe .dark-overlay {
     background: rgba(0, 0, 0, 0.7);
     top: 0;
@@ -58,7 +63,7 @@
     height: 100%; }
 
 #get-in-touch {
-  background: url("../../img/parallax2.jpg") no-repeat center center/cover fixed; }
+  background: url("../img/parallax2.jpg") no-repeat center center/cover fixed; }
   #get-in-touch .dark-overlay {
     background: rgba(0, 0, 0, 0.7);
     top: 0;
@@ -79,11 +84,19 @@
   #showcase .title {
     font-size: 2rem; }
 
-  #get-in-touch .touch-form {
-    width: 75% !important; } }
+  /* #get-in-touch .touch-form {
+    width: 75% !important; } */
+  .w-md-75 {
+    width: 100% !important;
+  }
+}
 @media (max-width: 576px) {
   .mb-sm-resp {
     margin-bottom: 1rem; }
 
   #get-in-touch .touch-form {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .w-sm-100 {
+      width: 100% !important;
+    }
+  }
