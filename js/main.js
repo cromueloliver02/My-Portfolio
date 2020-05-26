@@ -3,9 +3,10 @@ function load() {
 }
 
 $(document).ready(function () {
-   setTimeout(() => {
-      load();
-   }, 2000);
+   document.addEventListener('DOMContentLoaded', load());
+   // setTimeout(() => {
+   //    load();
+   // }, 2000);
 
    setTimeout(() => {
       const typed = new Typed('.element', {
