@@ -1,13 +1,13 @@
-function load() {
-   $('.loader').fadeOut(750);
-}
-
-document.addEventListener('DOMContentLoaded', load());
-
 $(document).ready(function () {
-   // setTimeout(() => {
-   //    load();
-   // }, 2000);
+   function load() {
+      $('.loader').fadeOut(750);
+   }
+
+   $(window).on('load', function () {
+      setTimeout(() => {
+         load();
+      }, 2000);
+   });
 
    setTimeout(() => {
       const typed = new Typed('.element', {
