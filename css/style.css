@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .text-html-color {
   color: #d15b2a; }
 
