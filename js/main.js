@@ -6,7 +6,7 @@ $(document).ready(function () {
    $(window).on('load', function () {
       setTimeout(() => {
          load();
-      }, 2000);
+      }, 1000);
    });
 
    setTimeout(() => {
