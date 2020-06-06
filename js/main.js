@@ -1,11 +1,11 @@
 $(document).ready(function () {
-   function load() {
-      $('.loader').fadeOut(750);
+   function fadeOut() {
+      $('.loader').fadeOut(500);
    }
 
    $(window).on('load', function () {
       setTimeout(() => {
-         load();
+         fadeOut();
 
          setTimeout(() => {
             const typed = new Typed('.element', {
