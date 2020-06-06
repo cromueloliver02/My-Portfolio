@@ -6,21 +6,34 @@ $(document).ready(function () {
    $(window).on('load', function () {
       setTimeout(() => {
          load();
+
+         setTimeout(() => {
+            const typed = new Typed('.element', {
+               typeSpeed: 150,
+               backSpeed: 35,
+               loop: true,
+               backDelay: 2000,
+               strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
+               showCursor: true,
+               cursorChar: '|',
+               autoInsertCss: true
+            });
+         }, 3500);
       }, 1000);
    });
 
-   setTimeout(() => {
-      const typed = new Typed('.element', {
-         typeSpeed: 150,
-         backSpeed: 35,
-         loop: true,
-         backDelay: 2000,
-         strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
-         showCursor: true,
-         cursorChar: '|',
-         autoInsertCss: true
-      });
-   }, 4750);
+   // setTimeout(() => {
+   //    const typed = new Typed('.element', {
+   //       typeSpeed: 150,
+   //       backSpeed: 35,
+   //       loop: true,
+   //       backDelay: 2000,
+   //       strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
+   //       showCursor: true,
+   //       cursorChar: '|',
+   //       autoInsertCss: true
+   //    });
+   // }, 4750);
 
    AOS.init({
       offset: 100,
