@@ -1,61 +1,26 @@
-function fadeOut() {
-   $('.loader').fadeOut(750);
-}
-
-window.addEventListener('DOMContentLoaded', function () {
-   setTimeout(() => {
-      fadeOut();
-
-      setTimeout(() => {
-         const typed = new Typed('.element', {
-            typeSpeed: 150,
-            backSpeed: 35,
-            loop: true,
-            backDelay: 2000,
-            strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
-            showCursor: true,
-            cursorChar: '|',
-            autoInsertCss: true
-         });
-      }, 4000);
-   }, 1000);
-});
-
 $(document).ready(function () {
+   function load() {
+      $('.loader').fadeOut(750);
+   }
 
+   $(window).on('load', function () {
+      setTimeout(() => {
+         load();
+      }, 1000);
+   });
 
-
-   // $(window).on('load', function () {
-   //    setTimeout(() => {
-   //       fadeOut();
-
-   //       setTimeout(() => {
-   //          const typed = new Typed('.element', {
-   //             typeSpeed: 150,
-   //             backSpeed: 35,
-   //             loop: true,
-   //             backDelay: 2000,
-   //             strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
-   //             showCursor: true,
-   //             cursorChar: '|',
-   //             autoInsertCss: true
-   //          });
-   //       }, 0);
-   //    }, 1000);
-   // });
-
-   // setTimeout(() => {
-   //    const typed = new Typed('.element', {
-   //       typeSpeed: 150,
-   //       backSpeed: 35,
-   //       loop: true,
-   //       backDelay: 2000,
-   //       strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
-   //       showCursor: true,
-   //       cursorChar: '|',
-   //       autoInsertCss: true
-   //    });
-   // }, 4750);
+   setTimeout(() => {
+      const typed = new Typed('.element', {
+         typeSpeed: 150,
+         backSpeed: 35,
+         loop: true,
+         backDelay: 2000,
+         strings: ['Fullstack Developer', 'Software Engineer', 'Penetration Tester', 'IT Student'],
+         showCursor: true,
+         cursorChar: '|',
+         autoInsertCss: true
+      });
+   }, 4750);
 
    AOS.init({
       offset: 100,
